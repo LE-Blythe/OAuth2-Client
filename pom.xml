@@ -51,7 +51,7 @@
     </build>
 
     <scm>
-        <developerConnection>scm:git:git@github.com:le-blythe/${project.artifactId}.git</developerConnection>
+        <developerConnection>scm:git:https://github.com/le-blythe/${project.artifactId}.git</developerConnection>
     </scm>
 
     <distributionManagement>
