@@ -13,6 +13,7 @@
         <gson.version>2.3.1</gson.version>
         <apache.oauth2.version>1.0.0</apache.oauth2.version>
         <lombok.version>1.16.4</lombok.version>
+        <nexus.repository.url>http://localhost:8081/nexus/content/repositories</nexus.repository.url>
     </properties>
     <dependencies>
 
@@ -38,5 +39,22 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
+
+    <scm>
+        <developerConnection>scm:git@github.com:le-blythe/${artifactId}.git</developerConnection>
+    </scm>
+
+    <distributionManagement>
+        <repository>
+            <id>deployment</id>
+            <name>release</name>
+            <url>${nexus.repository.url}/releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>deployment</id>
+            <name>snapshot</name>
+            <url>${nexus.repository.url}/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
 
 </project>
