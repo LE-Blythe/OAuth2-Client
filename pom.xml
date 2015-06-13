@@ -41,7 +41,7 @@
     </dependencies>
 
     <scm>
-        <developerConnection>scm:git:ssh://github.com/LE-Blythe/OAuth2-Client.git</developerConnection>
+        <developerConnection>scm:git:git@github.com:LE-Blythe/OAuth2-Client.git</developerConnection>
     </scm>
 
     <distributionManagement>
