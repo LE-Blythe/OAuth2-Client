@@ -41,7 +41,7 @@
     </dependencies>
 
     <scm>
-        <developerConnection>scm:git@github.com:le-blythe/${artifactId}.git</developerConnection>
+        <developerConnection>scm:git:git@github.com:le-blythe/${project.artifactId}.git</developerConnection>
     </scm>
 
     <distributionManagement>
