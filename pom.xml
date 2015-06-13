@@ -56,13 +56,11 @@
 
     <distributionManagement>
         <repository>
-            <id>deployment</id>
-            <name>release</name>
+            <id>releases</id>
             <url>${nexus.repository.url}/releases/</url>
         </repository>
         <snapshotRepository>
-            <id>deployment</id>
-            <name>snapshot</name>
+            <id>snapshots</id>
             <url>${nexus.repository.url}/snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
