@@ -10,14 +10,16 @@ public class OAuth2ResponseJson implements OAuth2Response {
 
     private final int responseCode;
     private final String content;
+    private final Gson gson;
 
-    public OAuth2ResponseJson(int responseCode, String content){
+    public OAuth2ResponseJson(int responseCode, String content, Gson gson){
         this.responseCode = responseCode;
         this.content = content;
+        this.gson = gson;
     }
 
     public <T> T getEntity(Class<T> classOfT) {
-        return new Gson().fromJson(content, classOfT);
+        return gson.fromJson(content, classOfT);
     }
 
     public int getHttpResponseCode() {
