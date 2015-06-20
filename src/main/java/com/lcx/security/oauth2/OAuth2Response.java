@@ -5,6 +5,7 @@ package com.lcx.security.oauth2;
  */
 public interface OAuth2Response {
 
-    <T> T getEntity(Class<T> classOfT);
+    <T> T getContentAs(Class<T> classOfT);
+    String getContent();
     int getHttpResponseCode();
 }
